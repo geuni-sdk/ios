@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <SdkDelegate>
+
+@property(nonatomic, strong)Sdk* sdk;
 
 @end
 
@@ -22,6 +24,15 @@
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)showPopUp:(id)sender {
+  if (self.sdk == nil) {
+    self.sdk = [[Sdk alloc] initWithAppId:@"SAMPLE-APP-ID"];
+  }
+  self.sdk.delegate = self;
+  [self.sdk showPopUp];
+  
 }
 
 @end

@@ -14,6 +14,8 @@
 		4EFEB3961C64BB5000378E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFEB3951C64BB5000378E9C /* Assets.xcassets */; };
 		4EFEB3991C64BB5000378E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFEB3971C64BB5000378E9C /* LaunchScreen.storyboard */; };
 		4EFEB3A41C64BB5000378E9C /* SdkSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB3A31C64BB5000378E9C /* SdkSampleTests.m */; };
+		4EFEB3AF1C64BB7100378E9C /* Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFEB3AE1C64BB7100378E9C /* Sdk.framework */; };
+		4EFEB3B11C64BB7800378E9C /* Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFEB3AE1C64BB7100378E9C /* Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 			remoteInfo = SdkSample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EFEB3B21C64BB7800378E9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4EFEB3B11C64BB7800378E9C /* Sdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4EFEB3861C64BB5000378E9C /* SdkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +56,7 @@
 		4EFEB39F1C64BB5000378E9C /* SdkSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SdkSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEB3A31C64BB5000378E9C /* SdkSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SdkSampleTests.m; sourceTree = "<group>"; };
 		4EFEB3A51C64BB5000378E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFEB3AE1C64BB7100378E9C /* Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFEB3AF1C64BB7100378E9C /* Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 		4EFEB37D1C64BB5000378E9C = {
 			isa = PBXGroup;
 			children = (
+				4EFEB3AE1C64BB7100378E9C /* Sdk.framework */,
 				4EFEB3881C64BB5000378E9C /* SdkSample */,
 				4EFEB3A21C64BB5000378E9C /* SdkSampleTests */,
 				4EFEB3871C64BB5000378E9C /* Products */,
@@ -121,6 +140,7 @@
 				4EFEB3821C64BB5000378E9C /* Sources */,
 				4EFEB3831C64BB5000378E9C /* Frameworks */,
 				4EFEB3841C64BB5000378E9C /* Resources */,
+				4EFEB3B21C64BB7800378E9C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,6 +361,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rslysh.SdkSample;
@@ -352,6 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rslysh.SdkSample;
