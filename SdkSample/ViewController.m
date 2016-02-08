@@ -32,7 +32,6 @@
   }
   self.sdk.delegate = self;
   [self.sdk showPopUp];
-  
 }
 
 @end

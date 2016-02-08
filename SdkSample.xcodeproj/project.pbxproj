@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3D6FBA1C689BBB0049EAEC /* Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3D6FB81C689BB10049EAEC /* Sdk.framework */; };
+		4E3D6FBB1C689BBB0049EAEC /* Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3D6FB81C689BB10049EAEC /* Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4EFEB38B1C64BB5000378E9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB38A1C64BB5000378E9C /* main.m */; };
 		4EFEB38E1C64BB5000378E9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB38D1C64BB5000378E9C /* AppDelegate.m */; };
 		4EFEB3911C64BB5000378E9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB3901C64BB5000378E9C /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		4EFEB3961C64BB5000378E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFEB3951C64BB5000378E9C /* Assets.xcassets */; };
 		4EFEB3991C64BB5000378E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFEB3971C64BB5000378E9C /* LaunchScreen.storyboard */; };
 		4EFEB3A41C64BB5000378E9C /* SdkSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB3A31C64BB5000378E9C /* SdkSampleTests.m */; };
-		4EFEB3AF1C64BB7100378E9C /* Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFEB3AE1C64BB7100378E9C /* Sdk.framework */; };
-		4EFEB3B11C64BB7800378E9C /* Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFEB3AE1C64BB7100378E9C /* Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4EFEB3B11C64BB7800378E9C /* Sdk.framework in Embed Frameworks */,
+				4E3D6FBB1C689BBB0049EAEC /* Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E3D6FB81C689BB10049EAEC /* Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sdk.framework; path = Frameworks/Release/Sdk.framework; sourceTree = "<group>"; };
 		4EFEB3861C64BB5000378E9C /* SdkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEB38A1C64BB5000378E9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EFEB38C1C64BB5000378E9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		4EFEB39F1C64BB5000378E9C /* SdkSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SdkSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEB3A31C64BB5000378E9C /* SdkSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SdkSampleTests.m; sourceTree = "<group>"; };
 		4EFEB3A51C64BB5000378E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EFEB3AE1C64BB7100378E9C /* Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EFEB3AF1C64BB7100378E9C /* Sdk.framework in Frameworks */,
+				4E3D6FBA1C689BBB0049EAEC /* Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 		4EFEB37D1C64BB5000378E9C = {
 			isa = PBXGroup;
 			children = (
-				4EFEB3AE1C64BB7100378E9C /* Sdk.framework */,
+				4E3D6FB81C689BB10049EAEC /* Sdk.framework */,
 				4EFEB3881C64BB5000378E9C /* SdkSample */,
 				4EFEB3A21C64BB5000378E9C /* SdkSampleTests */,
 				4EFEB3871C64BB5000378E9C /* Products */,
@@ -365,6 +365,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks/Release",
 				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -381,6 +382,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks/Release",
 				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +434,7 @@
 				4EFEB3AA1C64BB5000378E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EFEB3AB1C64BB5000378E9C /* Build configuration list for PBXNativeTarget "SdkSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +443,7 @@
 				4EFEB3AD1C64BB5000378E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
