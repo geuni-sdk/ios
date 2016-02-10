@@ -34,4 +34,21 @@
   [self.sdk showPopUp];
 }
 
+#pragma SdkDelegate
+
+- (void)willAppearAd {
+  NSLog(@"willAppearAd");
+}
+
+- (void)didAppearAd {
+  NSLog(@"didAppearAd");
+}
+
+- (void)willDissappearAd {
+  NSLog(@"willDissappearAd");
+}
+- (void)didDissappearAd {
+  NSLog(@"didDissappearAd");
+}
+
 @end

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E3D6FBA1C689BBB0049EAEC /* Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3D6FB81C689BB10049EAEC /* Sdk.framework */; };
-		4E3D6FBB1C689BBB0049EAEC /* Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3D6FB81C689BB10049EAEC /* Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E58F0D01C6B8D850007C770 /* Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E58F0CF1C6B8D850007C770 /* Sdk.framework */; };
+		4E58F0D11C6B8D850007C770 /* Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E58F0CF1C6B8D850007C770 /* Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4EFEB38B1C64BB5000378E9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB38A1C64BB5000378E9C /* main.m */; };
 		4EFEB38E1C64BB5000378E9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB38D1C64BB5000378E9C /* AppDelegate.m */; };
 		4EFEB3911C64BB5000378E9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEB3901C64BB5000378E9C /* ViewController.m */; };
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4E3D6FBB1C689BBB0049EAEC /* Sdk.framework in Embed Frameworks */,
+				4E58F0D11C6B8D850007C770 /* Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E3D6FB81C689BB10049EAEC /* Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sdk.framework; path = Frameworks/Release/Sdk.framework; sourceTree = "<group>"; };
+		4E58F0CF1C6B8D850007C770 /* Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sdk.framework; path = Frameworks/Debug/Sdk.framework; sourceTree = "<group>"; };
 		4EFEB3861C64BB5000378E9C /* SdkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFEB38A1C64BB5000378E9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EFEB38C1C64BB5000378E9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3D6FBA1C689BBB0049EAEC /* Sdk.framework in Frameworks */,
+				4E58F0D01C6B8D850007C770 /* Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 		4EFEB37D1C64BB5000378E9C = {
 			isa = PBXGroup;
 			children = (
-				4E3D6FB81C689BB10049EAEC /* Sdk.framework */,
+				4E58F0CF1C6B8D850007C770 /* Sdk.framework */,
 				4EFEB3881C64BB5000378E9C /* SdkSample */,
 				4EFEB3A21C64BB5000378E9C /* SdkSampleTests */,
 				4EFEB3871C64BB5000378E9C /* Products */,
@@ -365,7 +365,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Frameworks/Release",
+					"$(PROJECT_DIR)/Frameworks/Debug",
 				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -382,7 +382,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Frameworks/Release",
+					"$(PROJECT_DIR)/Frameworks/Debug",
 				);
 				INFOPLIST_FILE = SdkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
