@@ -31,6 +31,5 @@ FOUNDATION_EXPORT const unsigned char SdkVersionString[];
 - (instancetype)initWithAppId:(NSString*)appId;
 
 - (void)showPopUp;
-- (void)showFlurry;
 
 @end
